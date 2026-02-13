@@ -49,18 +49,29 @@ nav> #description{
     display: flex;
     flex-direction: column;
     width: max-content;
-}
-
-
-.front-container > .overlay-text > .label-input{
     background-color: #082D0F;
     color: white;
     margin-top: 20px;
     padding: 10px 15px;
     border-radius: 15px;
-    text-align: center;
+
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: larger;
+    gap: 5px;
+
+}
+
+.front-container > .overlay-text > .label-input > button{
+    border-radius: 20px;
+    padding: 5px;
+    width: max-content;
+    font-weight: 900;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.front-container > .overlay-text > .label-input > button:hover{
+    background-color: #639578;
+    color: #fff;
 }
 .front-container > .overlay-text > .input{
     display: none;
