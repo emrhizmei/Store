@@ -39,8 +39,7 @@ let buy=document.getElementsByClassName('buy')
 
 buy[0].addEventListener('click', function() {
     if (Balance >= 200){
-        let modal = document.querySelector('.modal')
-        modal.classList.toggle("active")
+        showConfirmation()
         Balance -= 200
         let balancel = document.getElementById('balance')
         balancel.innerText = Balance       
@@ -51,6 +50,7 @@ buy[0].addEventListener('click', function() {
 
 buy[1].addEventListener('click', function() {
     if (Balance >= 200){
+        showConfirmation()
         Balance -= 200
         let balancel = document.getElementById ('balance')
         balancel.innerText = Balance  
@@ -61,6 +61,7 @@ buy[1].addEventListener('click', function() {
 })
 buy[2].addEventListener('click', function() {
     if (Balance >= 200){
+        showConfirmation()
         Balance -= 200
         let balancel = document.getElementById ('balance')
         balancel.innerText = Balance  
@@ -71,6 +72,7 @@ buy[2].addEventListener('click', function() {
 
 buy[3].addEventListener('click', function() {
     if (Balance >= 200){
+        showConfirmation()
         Balance -= 200
         let balancel = document.getElementById ('balance')
         balancel.innerText = Balance
@@ -81,6 +83,7 @@ buy[3].addEventListener('click', function() {
 
 buy[4].addEventListener('click', function() {
     if (Balance >= 200){
+        showConfirmation()
         Balance -= 200
         let balancel = document.getElementById ('balance')
         balancel.innerText = Balance
@@ -91,6 +94,7 @@ buy[4].addEventListener('click', function() {
 
 buy[5].addEventListener('click', function() {
     if (Balance >= 200){
+        showConfirmation()
         Balance -= 200
         let balancel = document.getElementById ('balance')
         balancel.innerText = Balance
@@ -101,6 +105,7 @@ buy[5].addEventListener('click', function() {
 
 buy[6].addEventListener('click', function() {
     if (Balance >= 200){
+        showConfirmation()
         Balance -= 200
         let balancel = document.getElementById ('balance')
         balancel.innerText = Balance
@@ -111,6 +116,7 @@ buy[6].addEventListener('click', function() {
 
 buy[7].addEventListener('click', function() {
     if (Balance >= 200){
+        showConfirmation()
         Balance -= 200
         let balancel = document.getElementById ('balance')
         balancel.innerText = Balance
@@ -139,3 +145,7 @@ okay.addEventListener('click', function(){
     let thankyou = document.querySelector('.thankyou')
     thankyou.classList.remove("active")
 })
+function showConfirmation(){
+    let modal = document.querySelector('.modal')
+    modal.classList.toggle("active")
+}
