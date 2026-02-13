@@ -36,8 +36,11 @@ btn.addEventListener('click', function(){
 
 let buy=document.getElementsByClassName('buy')
 
+
 buy[0].addEventListener('click', function() {
     if (Balance >= 200){
+        let modal = document.querySelector('.modal')
+        modal.classList.toggle("active")
         Balance -= 200
         let balancel = document.getElementById('balance')
         balancel.innerText = Balance       
@@ -116,3 +119,23 @@ buy[7].addEventListener('click', function() {
     }
 })
 
+let cancel = document.getElementById('cancel')
+cancel.addEventListener('click', function(){
+    let modal = document.querySelector('.modal')
+    modal.classList.remove("active")
+} )
+
+let confirm = document.getElementById('confirm')
+confirm.addEventListener('click', function() {
+    let modal = document.querySelector('.modal')
+    modal.classList.remove("active")
+
+    let thankyou = document.querySelector('.thankyou')
+    thankyou.classList.add("active")
+})
+
+let okay = document.getElementById('okay')
+okay.addEventListener('click', function(){
+    let thankyou = document.querySelector('.thankyou')
+    thankyou.classList.remove("active")
+})
